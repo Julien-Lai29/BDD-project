@@ -5,6 +5,9 @@
 // mixins
 @import './mixins/forsize';
 
+// components
+@import './components/_header.scss';
+
 * {
   box-sizing: border-box;
 }
