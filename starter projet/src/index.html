@@ -4,43 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="./page_piling/jquery.pagepiling.css"/>
-  <link rel="stylesheet" type="text/css" href="./page_piling/background.pagepiling.css"/>
+  <link rel="stylesheet" type="text/css" href="./page_piling/jquery.pagepiling.css" />
   <title>Page Title</title>
 </head>
 
 <body>
   <!-- content -->
   <div id="pagepiling">
-  <div class="section" id="section1"></div>
-	<div class="section">Some section</div>
-	<div class="section">Some section</div>
-	<div class="section">Some section</div>
-</div>
+    <div class="section" id="section1">
+      <div class="Km">
+        <img class="Km-logo" src="./img/logo.png" alt="Logo KM42">
+        <h1 class="Km-title">Bienvenue chez nous !</h1>
+      </div>
+    </div>
+    <div class="section">Some section</div>
+    <div class="section">Some section</div>
+    <div class="section">Some section</div>
+    <div class="section">Some section</div>
+  </div>
 
-<style>
-/* Style for our header texts
+  <style>
+    /* Style for our header texts
   * --------------------------------------- */
-  h1{
-    font-size: 5em;
-    font-family: arial,helvetica;
-    color: #fff;
-    margin:0;
-    padding:0;
-  }
 
   /* Centered texts in each section
   * --------------------------------------- */
-  .section{
-    text-align:center;
-  }
 
 
   /* Backgrounds will cover all the section
   * --------------------------------------- */
-  #section1,
-  #section2,
-  #section3{
+  #section1{
     background-size: cover;
   }
 
@@ -48,27 +41,9 @@
   * --------------------------------------- */
   #section1{
     background-image: url(./img/wall.jpg);
-  }
-
-  #section1 h1{
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    top: 30px;
-    color: #fff;
-  }
-
-
-  #section2 h1,
-  #section2 p{
-    text-shadow: 1px 5px 20px #000;
-  }
-
-  #section3 h1,
-  #section3 p{
-    text-shadow: 1px 5px 20px #000;
-    color: #fff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   #infoMenu li a{
@@ -81,29 +56,28 @@
   <script type="text/javascript" src="page_piling/jquery.pagepiling.min.js"></script>
   <script src="index.js"></script>
   <script>
-
-        /*
-        * Plugin intialization
-        */
-          $('#pagepiling').pagepiling({
-            menu: '#menu',
-            anchors: ['page1', 'page2', 'page3', 'page4'],
-            sectionsColor: ['white', '#ee005a', '#2C3E50', '#39C'],
-            navigation: {
-              'position': 'right',
-              'tooltips': ['Page 1', 'Équipe', 'Événements', 'Contacts']
-            },
-            afterRender: function(){
-              $('#pp-nav').addClass('custom');
-            },
-            afterLoad: function(anchorLink, index){
-              if(index>1){
-                $('#pp-nav').removeClass('custom');
-              }else{
-                $('#pp-nav').addClass('custom');
-              }
-            }
-        });
+    /*
+     * Plugin intialization
+     */
+    $('#pagepiling').pagepiling({
+      menu: '#menu',
+      anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+      sectionsColor: ['white', '#ee005a', '#2C3E50', '#39C', '#ee005a'],
+      navigation: {
+        'position': 'right',
+        'tooltips': ['KM42', 'Équipe', 'Catalogue', 'Évènements', 'Contacts']
+      },
+      afterRender: function() {
+        $('#pp-nav').addClass('custom');
+      },
+      afterLoad: function(anchorLink, index) {
+        if (index > 1) {
+          $('#pp-nav').removeClass('custom');
+        } else {
+          $('#pp-nav').addClass('custom');
+        }
+      }
+    });
   </script>
 </body>
 
