@@ -94,9 +94,11 @@ html, body {
     cursor: pointer;
     text-decoration: none;
 }
+/* Propriété point ancre active*/
 #pp-nav li .active span,
 .pp-slidesNav .active span {
     background: #333;
+
 }
 #pp-nav span,
 .pp-slidesNav span {
