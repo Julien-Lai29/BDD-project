@@ -1,6 +1,35 @@
 .team {
   &-img {
-    width: 4rem;
-    height: auto;
+    width: 100vw;
+    height: 20rem;
+  }
+
+  &-titleContainer {
+    display: flex;
+    width: 40rem;
+    height: 10rem;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.3);
+    margin: 0 auto;
+  }
+
+  &-title {
+    margin: auto;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 7rem;
+    color: $black-run;
+    text-align: center;
+  }
+  &-textContainer {
+    width: 30rem;
+    height: 30px;
+    margin: 0 auto;
+  }
+  &-text {
+    font-size: 1.6rem;
+    color:$black-run;
+    padding: 10px;
   }
 }

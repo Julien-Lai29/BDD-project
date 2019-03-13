@@ -1,11 +1,13 @@
 .km {
+  width: 100vw;
+  height: auto;
   text-align: center;
   &-title {
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 4rem;
     color: white;
-    margin-top: 20rem;
+    margin-top: 10rem;
     @include for-size(desktop-up) {
       font-size: 8rem;
       margin-top: 10rem;
@@ -13,37 +15,43 @@
   }
 
   &-logo {
-    width: 20rem;
+    width: 15rem;
     height: auto;
+    @include for-size(desktop-up) {
+      width: 25rem;
+      margin-top: 10rem;
+    }
   }
 
   &-arrow {
+    margin-top: 10rem;
     animation-name: floating;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
   }
-
   @keyframes floating {
-  from {
-    transform: translate(0, 0px);
-  }
+    from {
+      transform: translate(0, 0px);
+    }
 
-  65% {
-    transform: translate(0, 15px);
-  }
+    65% {
+      transform: translate(0, 15px);
+    }
 
-  to {
-    transform: translate(0, -0px);
+    to {
+      transform: translate(0, -0px);
+    }
   }
-}
 
   &-arrowImg {
-    width: 10rem;
+    width: 5rem;
     height: auto;
-    margin-top: 10rem;
     @include for-size(desktop-up) {
-      text-align: center;
+      width: 10rem;
     }
+  }
+  #section1{
+    vertical-align: middle;
   }
 }
