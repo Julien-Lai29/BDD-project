@@ -1,25 +1,23 @@
-.catalog {
+.events {
   text-align: center;
-
   &-container {
     @include for-size(desktop-up) {
-      width: 90rem;
+      width: 100%;
       height: auto;
       margin: 0 auto;
     }
   }
-
   &-img {
     margin-top: 2rem;
     width: 40rem;
     height: 15rem;
     @include for-size(desktop-up) {
-      height: 35rem;
+      width: 50rem;
+      height: 50rem;
       display: inline-block;
       vertical-align: middle;
     }
   }
-
   &-titleMobile {
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: bold;
@@ -30,7 +28,6 @@
       display: none;
     }
   }
-
   &-titleContainer {
     display: none;
     @include for-size(desktop-up) {
@@ -41,7 +38,6 @@
       vertical-align: top;
     }
   }
-
   &-titleDesktop {
     display: none;
     @include for-size(desktop-up) {
@@ -69,7 +65,7 @@
   &-text {
     font-size: 1.6rem;
     line-height: 2.4rem;
-    color: $black-run;
+    color:$black-run;
     text-align: left;
     margin-top: 3rem;
     @include for-size(desktop-up) {
