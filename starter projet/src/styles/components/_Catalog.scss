@@ -1,8 +1,8 @@
-.team {
+.catalog {
   text-align: center;
   &-container {
     @include for-size(desktop-up) {
-      width: 90rem;
+      width: 100%;
       height: auto;
       margin: 0 auto;
     }
@@ -14,17 +14,38 @@
     @include for-size(desktop-up) {
       height: 35rem;
       display: inline-block;
+      vertical-align: middle;
     }
   }
 
-  &-title {
+  &-titleMobile {
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: bold;
     font-size: 7rem;
     color: $red-run;
     text-align: center;
     @include for-size(desktop-up) {
-      margin-bottom: 3rem;
+      display: none;
+    }
+  }
+
+  &-titleContainer {
+    width: 50rem;
+    height: 22rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &-titleDesktop {
+    display: none;
+    @include for-size(desktop-up) {
+      display: block;
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-weight: bold;
+      font-size: 7rem;
+      line-height: 10.5rem;
+      color: $red-run;
+      text-align: right;
     }
   }
 
@@ -35,6 +56,7 @@
     @include for-size(desktop-up) {
       display: inline-block;
       margin-left: 6rem;
+      vertical-align: bottom;
     }
   }
 
@@ -45,6 +67,7 @@
     text-align: left;
     margin-top: 3rem;
     @include for-size(desktop-up) {
+      margin-top: 0;
     }
   }
 

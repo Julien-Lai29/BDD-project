@@ -1,30 +1,44 @@
 .km {
   width: 100vw;
-  height: auto;
-  text-align: center;
-  &-title {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: bold;
-    font-size: 4rem;
-    color: white;
-    margin-top: 10rem;
+  height: 100vh;
+  padding-top: 15rem;
+  &-container {
+    text-align: center;
     @include for-size(desktop-up) {
-      font-size: 8rem;
-      margin-top: 10rem;
+      text-align: left;
     }
   }
-
   &-logo {
     width: 15rem;
     height: auto;
     @include for-size(desktop-up) {
-      width: 25rem;
-      margin-top: 10rem;
+      width: 35rem;
+      margin-left: 10rem;
     }
   }
-
-  &-arrow {
+  &-titleContainer {
+    @include for-size(desktop-up) {
+      width: 60rem;
+      height: auto;
+      margin-left: 10rem;
+      margin-bottom: 10rem;
+    }
+  }
+  &-title {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
     margin-top: 10rem;
+    text-align: center;
+    @include for-size(desktop-up) {
+      font-size: 8rem;
+      margin-top: 8rem;
+      text-align: left;
+    }
+  }
+  &-arrow {
+    text-align: center;
     animation-name: floating;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
@@ -47,11 +61,10 @@
   &-arrowImg {
     width: 5rem;
     height: auto;
+    margin-top: 5rem;
     @include for-size(desktop-up) {
       width: 10rem;
+      margin-top: 0;
     }
-  }
-  #section1{
-    vertical-align: middle;
   }
 }
