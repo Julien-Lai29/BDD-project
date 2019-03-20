@@ -1,15 +1,8 @@
 .events {
   text-align: center;
-  &-container {
-    @include for-size(desktop-up) {
-      width: 100%;
-      height: auto;
-      margin: 0 auto;
-    }
-  }
   &-img {
     margin-top: 2rem;
-    width: 40rem;
+    width: 100vw;
     height: 15rem;
     @include for-size(desktop-up) {
       width: 50rem;
@@ -18,11 +11,30 @@
       vertical-align: middle;
     }
   }
+
+  &-titleContainerMobile {
+    z-index: 2;
+    top: 3rem;
+    display: flex;
+    vertical-align: middle;
+    width: 30rem;
+    height: 7rem;
+    background: #fff;
+    box-shadow: $dp8-1;
+    box-shadow: $dp8-2;
+    box-shadow: $dp8-3;
+    border-radius: 2rem;
+    margin: 0 auto;
+    @include for-size(desktop-up) {
+      display: none;
+    }
+  }
   &-titleMobile {
+    margin: auto;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: bold;
-    font-size: 7rem;
-    color: $red-run;
+    font-size: 4rem;
+    color: $black-run;
     text-align: center;
     @include for-size(desktop-up) {
       display: none;
@@ -31,9 +43,8 @@
   &-titleContainer {
     display: none;
     @include for-size(desktop-up) {
-      display: none;
-      width: 50rem;
-      height: 22rem;
+      width: 45rem;
+      height: auto;
       display: inline-block;
       vertical-align: top;
     }
@@ -44,7 +55,7 @@
       display: block;
       font-family: 'Open Sans Condensed', sans-serif;
       font-weight: bold;
-      font-size: 7rem;
+      font-size: 6rem;
       line-height: 10.5rem;
       color: $red-run;
       text-align: right;
