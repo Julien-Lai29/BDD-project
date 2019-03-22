@@ -1,0 +1,55 @@
+.secondEvent {
+  width: 100vw;
+  height: 100vh;
+
+  &-containerRight {
+    width: 70rem;
+    height: auto;
+    display: inline-block;
+    margin-left: 1rem;
+  }
+
+  &-containerLeft {
+    position: relative;
+    width: 70rem;
+    height: auto;
+    display: inline-block;
+  }
+
+  &-slider {
+    width: 70rem;
+    height: 100vh;
+    display: inline-block;
+  }
+
+  &-img {
+    width: 74rem;
+    height: 50%;
+  }
+
+  &-title {
+    position: absolute;
+    font-size: 5rem;
+    margin-top: 8rem;
+    text-align: left;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    color: $red-run;
+    margin-left: 2rem;
+    vertical-align: middle;
+  }
+
+  &-arrowImg {
+    @include for-size(desktop-up) {
+      position: absolute;
+      width: 5rem;
+      height: auto;
+    }
+  }
+
+  &-img1 {
+    width: 74rem;
+    height: 50%;
+    margin-bottom: 1.3rem;
+  }
+}
