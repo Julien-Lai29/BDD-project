@@ -1,0 +1,177 @@
+.md-modal {
+  margin: auto;
+  position: fixed;
+  top: 47px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2000;
+  visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  text-align: center;
+  @include for-size(desktop-up) {
+    margin: auto;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2000;
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    text-align: center;
+  }
+}
+
+.md-show {
+  visibility: visible;
+}
+
+.md-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  background-color: #ffffff;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.md-show ~ .md-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.md-effect-12 .md-content {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.md-show.md-effect-12 ~ .md-overlay {
+  background-color: #ffffff;
+}
+
+.md-effect-12 .md-content,
+.md-effect-12 .md-content h3 {
+  background: transparent;
+}
+
+.md-show.md-effect-12 .md-content {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.md-img {
+  width: 100vw;
+  height: 15rem;
+  @include for-size(desktop-up) {
+    width: 50rem;
+    height: 50rem;
+    display: inline-block;
+  }
+}
+
+.md-title {
+  display: none;
+  @include for-size(desktop-up) {
+    display: block;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: $red-run;
+    text-align: left;
+  }
+}
+
+.md-titleMobile {
+  margin: auto;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  color: $black-run;
+  text-align: center;
+  @include for-size(desktop-up) {
+    display: none;
+  }
+}
+
+.md-titleContainerMobile {
+    z-index: 2;
+    top: 3rem;
+    display: flex;
+    vertical-align: middle;
+    width: 30rem;
+    height: 7rem;
+    background: #fff;
+    box-shadow: $dp8-1;
+    box-shadow: $dp8-2;
+    box-shadow: $dp8-3;
+    border-radius: 2rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    @include for-size(desktop-up) {
+      display: none;
+    }
+}
+
+.md-textContainer {
+  width: 35rem;
+  height: auto;
+  margin: 0 auto;
+  @include for-size(desktop-up) {
+    width: 50rem;
+    display: inline-block;
+    margin-left: 5rem;
+  }
+}
+
+.md-text {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: $black-run;
+  text-align: left;
+  margin-top: 3rem;
+}
+
+.md-textI {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: $red-run;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.md-closeImg {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  @include for-size(desktop-up) {
+    width: 2rem;
+    height: 2rem;
+    vertical-align: top;
+    cursor: pointer;
+  }
+}
+
+.md-trigger {
+  cursor: pointer;
+}

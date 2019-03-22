@@ -167,19 +167,24 @@ html {
 
 #pp-nav li .active span,
 .pp-slidesNav .active span {
+  width: 15px;
+  height: 15px;
   background: $red-run;
 }
 
 #pp-nav span,
 .pp-slidesNav span {
-  top: 2px;
-  left: 2px;
-  width: 8px;
-  height: 8px;
-  background: rgba(43, 43, 43, 0.3);
-  border-radius: 50%;
-  position: absolute;
-  z-index: 1;
+  display: none;
+  @include for-size(desktop-up) {
+    top: 2px;
+    left: 2px;
+    width: 15px;
+    height: 15px;
+    background: rgba(43, 43, 43, 0.3);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+  }
 }
 
 .pp-tooltip {

@@ -1,0 +1,60 @@
+.firstEvent {
+  width: 100vw;
+  height: 100vh;
+  display: table-cell;
+  vertical-align: middle;
+  &-img {
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    @include for-size(desktop-up) {
+      z-index: 1;
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+
+  &-arrow {
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin-top: 5rem;
+    @include for-size(desktop-up) {
+      text-align: center;
+    }
+  }
+
+  &-arrowImg {
+    z-index: 2;
+    width: 4rem;
+    height: auto;
+    @include for-size(desktop-up) {
+      z-index: 2;
+      width: 5rem;
+      height: auto;
+    }
+  }
+
+  &-titleContainer {
+     vertical-align: top;
+    @include for-size(desktop-up) {
+      width: 60rem;
+      height: auto;
+      margin-left: 10rem;
+      margin-bottom: 10rem;
+    }
+  }
+
+  &-title {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    @include for-size(desktop-up) {
+      font-size: 8rem;
+      margin-top: 8rem;
+      text-align: left;
+    }
+  }
+}

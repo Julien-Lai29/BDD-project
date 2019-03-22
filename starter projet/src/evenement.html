@@ -1,0 +1,167 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- content -->
+  <ul id="menu">
+    <li data-menuanchor="page1"><a href="#page1">PRODUITS</a></li>
+    <li data-menuanchor="page2"><a href="#page2">Page</a></li>
+    <li data-menuanchor="page3" class="active"><a href="#page3">ÉVÉNEMENTS</a></li>
+  </ul>
+
+  <div id="pagepiling">
+
+    <section class="section" id="section1">
+      <div class="firstEvent">
+        <div class="firstEvent-titleContainer">
+          <h1 class="firstEvent-title">MARATHON DE PARIS</h1>
+        </div>
+        <div class="firstEvent-arrow">
+          <a class="md-trigger" data-modal="modal-12">
+            <img class="firstEvent-arrowImg" src="./img/redArrowCircle1.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="md-modal md-effect-12">
+        <div class="md-content">
+          <img class="md-img" src="./img/shoes.jpg" alt="">
+          <div class="md-titleContainerMobile">
+            <h3 class="md-titleMobile">MARATHON DE PARIS</h3>
+          </div>
+          <div class="md-textContainer">
+            <h3 class="md-title">MARATHON DE PARIS</h3>
+            <p class="md-text">Rencontres sportives des rencontres pour petits et grands qui raviront les amateurs comme les professionnels. Crées pour partager et faire découvrire le monde du sport au non initiés, ces rencontre servent aussi au
+              habitués à s’ouvrire à de nouvelles pratique, rencontrer des camarades et participer aux nombreux concours organisé durant la manifestation.</p>
+            <p class="md-textI">Pour : Pro et amateur.</p>
+            <p class="md-textI">Date : 25 février 2019.</p>
+            <p class="md-textI">Prix : Prix libre/ gratuit.</p>
+          </div>
+          <a class="md-close">
+            <img class="md-closeImg" src="./img/close.png" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="md-overlay"></div>
+    </section>
+
+    <section class="section" id="section2">
+      <h1>Full-screen modal window</h1>
+      <button class="md-trigger" data-modal="modal-12">Show modal</button>
+
+      <div class="md-modal md-effect-12">
+        <div class="md-content">
+          <h3>Modal Dialog</h3>
+          <div>
+            <p>This is a modal window. You can do the following things with it:</p>
+            <ul>
+              <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+              <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+              <li><strong>Close:</strong> click on the button below to close the modal.</li>
+            </ul>
+            <button class="md-close">Close</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="md-overlay"></div>
+    </section>
+
+    <section class="section" id="section3">
+      <div class="firstEvent">
+        <div class="firstEvent-titleContainer">
+          <h1 class="firstEvent-title">MARATHON DE PARIS</h1>
+        </div>
+        <div class="firstEvent-arrow">
+          <a class="md-trigger" data-modal="modal-12">
+            <img class="firstEvent-arrowImg" src="./img/redArrowCircle1.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="md-modal md-effect-12">
+        <div class="md-content">
+          <img class="md-img" src="./img/pictOne.jpg" alt="">
+          <div class="md-titleContainerMobile">
+            <h3 class="md-titleMobile">MARATHON DE PARIS</h3>
+          </div>
+          <div class="md-textContainer">
+            <h3 class="md-title">MARATHON DE PARIS</h3>
+            <p class="md-text">Rencontres sportives des rencontres pour petits et grands qui raviront les amateurs comme les professionnels. Crées pour partager et faire découvrire le monde du sport au non initiés, ces rencontre servent aussi au
+              habitués à s’ouvrire à de nouvelles pratique, rencontrer des camarades et participer aux nombreux concours organisé durant la manifestation.</p>
+            <p class="md-textI">Pour : Pro et amateur.</p>
+            <p class="md-textI">Date : 25 février 2019.</p>
+            <p class="md-textI">Prix : Prix libre/ gratuit.</p>
+          </div>
+          <a class="md-close">
+            <img class="md-closeImg" src="./img/close.png" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="md-overlay"></div>
+    </section>
+  </div>
+  <style>
+    /* Style for our header texts
+  * --------------------------------------- */
+
+  /* Centered texts in each section
+  * --------------------------------------- */
+
+
+  /* Backgrounds will cover all the section
+  * --------------------------------------- */
+  #section1{
+    background-size: cover;
+  }
+
+  #section3{
+    background-size: cover;
+  }
+
+  /* Defining each section background and styles
+  * --------------------------------------- */
+  #section1{
+    background-image: url(./img/pictOne.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #section3{
+    background-image: url(./img/pictTwo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #infoMenu li a{
+      color: #fff;
+  }
+
+
+  </style>
+
+  <!-- end content -->
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="page_piling/jquery.pagepiling.min.js"></script>
+<script src="index.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#pagepiling').pagepiling({
+      sectionsColor: ['red', '#ffffff', '#ffffff'],
+      navigation: {
+        'position': 'right',
+      }
+    });
+  });
+</script>
+
+</html>
