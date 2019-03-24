@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>KM42 The Running Store - Événements</title>
 </head>
 
 <body>
   <!-- content -->
   <ul id="menu">
-    <li data-menuanchor="page1"><a href="#page1">PRODUITS</a></li>
-    <li data-menuanchor="page2"><a href="#page2">Page</a></li>
-    <li data-menuanchor="page3" class="active"><a href="#page3">ÉVÉNEMENTS</a></li>
+    <li><a href="http://localhost:1234/catalog.html">PRODUITS</a></li>
+    <li><a href="http://localhost:1234/index.html">Page</a></li>
+    <li class="active"><a href="http://localhost:1234/evenement.html">ÉVÉNEMENTS</a></li>
   </ul>
 
   <div id="pagepiling">
@@ -131,7 +131,7 @@
   }
 
   #section3{
-    background-image: url(./img/pictThree.jpg);
+    background-image: url(./img/pictTwo.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -152,9 +152,10 @@
 <script type="text/javascript">
   $(document).ready(function() {
     $('#pagepiling').pagepiling({
-      sectionsColor: ['red', '#ffffff', '#ffffff'],
+      sectionsColor: ['#ffffff', '#ffffff', '#ffffff'],
       navigation: {
         'position': 'right',
+        'tooltips': ['Page 1', 'Page 2', 'Page 3']
       }
     });
   });

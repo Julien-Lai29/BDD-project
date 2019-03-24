@@ -1,32 +1,42 @@
 .secondEvent {
   width: 100vw;
   height: 100vh;
-
   &-containerRight {
-    width: 70rem;
-    height: auto;
-    display: inline-block;
-    margin-left: 1rem;
+    display: none;
+    @include for-size(desktop-up) {
+      display: block;
+      width: 70rem;
+      height: auto;
+      display: inline-block;
+      margin-left: 1rem;
+    }
   }
 
   &-containerLeft {
-    position: relative;
-    width: 70rem;
-    height: auto;
-    display: inline-block;
+    display: none;
+    @include for-size(desktop-up) {
+      display: block;
+      position: relative;
+      width: 70rem;
+      height: auto;
+      display: inline-block;
+    }
   }
 
   &-slider {
+    display: none;
     @include for-size(desktop-up) {
-    width: 70rem;
-    height: 100vh;
-    display: inline-block;
-  }
+      display: block;
+      width: 70rem;
+      height: 100vh;
+      display: inline-block;
+    }
   }
 
   &-img {
     display: none;
     @include for-size(desktop-up) {
+      display: block;
       width: 74rem;
       height: 50%;
     }
@@ -35,6 +45,7 @@
   &-title {
     display: none;
     @include for-size(desktop-up) {
+      display: block;
       position: absolute;
       font-size: 5rem;
       margin-top: 8rem;
@@ -48,7 +59,9 @@
   }
 
   &-arrowImg {
+    display: none;
     @include for-size(desktop-up) {
+      display: block;
       position: absolute;
       width: 5rem;
       height: auto;
@@ -56,12 +69,29 @@
   }
 
   &-img1 {
-    width: 74rem;
-    height: 50%;
-    margin-bottom: 1.3rem;
+    display: none;
+    @include for-size(desktop-up) {
+      display: block;
+      width: 74rem;
+      height: 50%;
+      margin-bottom: 1.3rem;
+    }
   }
 
   &-mobileContainer {
-    display: none;
+    width: 100vw;
+    height: 100vh;
+    @include for-size(desktop-up) {
+      display: none;
+    }
+  }
+
+  &-mobileImg {
+    width: 100vw;
+    height: auto;
+    margin: 1rem 0 1rem 0;
+    @include for-size(desktop-up) {
+      display: none;
+    }
   }
 }
