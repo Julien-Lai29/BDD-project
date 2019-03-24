@@ -17,26 +17,34 @@
   }
 
   &-slider {
+    @include for-size(desktop-up) {
     width: 70rem;
     height: 100vh;
     display: inline-block;
   }
+  }
 
   &-img {
-    width: 74rem;
-    height: 50%;
+    display: none;
+    @include for-size(desktop-up) {
+      width: 74rem;
+      height: 50%;
+    }
   }
 
   &-title {
-    position: absolute;
-    font-size: 5rem;
-    margin-top: 8rem;
-    text-align: left;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: bold;
-    color: $red-run;
-    margin-left: 2rem;
-    vertical-align: middle;
+    display: none;
+    @include for-size(desktop-up) {
+      position: absolute;
+      font-size: 5rem;
+      margin-top: 8rem;
+      text-align: left;
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-weight: bold;
+      color: $red-run;
+      margin-left: 2rem;
+      vertical-align: middle;
+    }
   }
 
   &-arrowImg {
@@ -51,5 +59,9 @@
     width: 74rem;
     height: 50%;
     margin-bottom: 1.3rem;
+  }
+
+  &-mobileContainer {
+    display: none;
   }
 }

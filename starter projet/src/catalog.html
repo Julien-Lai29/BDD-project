@@ -10,8 +10,92 @@
 
 <body>
   <!-- content -->
+  <ul id="menu">
+    <li data-menuanchor="page1" class="active"><a href="#page1">PRODUITS</a></li>
+    <li data-menuanchor="page2"><a href="#page2">Page</a></li>
+    <li data-menuanchor="page3"><a href="#page3">ÉVÉNEMENTS</a></li>
+  </ul>
 
+  <div id="pagepiling">
+
+    <section class="section" id="section1">
+      <div class="shoes">
+        <div class="shoes-titleContainer">
+          <h3 class="shoes-title">CHAUSSURES</h3>
+        </div>
+        <div class="shoes-productContainer">
+          <a class="md-trigger" data-modal="modal-12">
+            <img src="./img/Productshoes.jpg" alt="" class="shoes-product">
+          </a>
+          <div class="md-modal md-effect-12">
+            <div class="md-content">
+              <img class="md-img" src="./img/Productshoes.jpg" alt="">
+              <div class="md-titleContainerMobile">
+                <h3 class="md-titleMobile">MARATHON DE PARIS</h3>
+              </div>
+              <div class="md-textContainer">
+                <h3 class="md-title">CHAUSSURES 1</h3>
+                <p class="md-text">Rencontres sportives des rencontres pour petits et grands qui raviront les amateurs comme les professionnels. Crées pour partager et faire découvrire le monde du sport au non initiés, ces rencontre servent aussi au
+                  habitués à s’ouvrire à de nouvelles pratique, rencontrer des camarades et participer aux nombreux concours organisé durant la manifestation.</p>
+                <p class="md-textI">Pour : Pro et amateur.</p>
+                <p class="md-textI">Marque : Nike.</p>
+                <p class="md-textI">Prix : 45 €.</p>
+              </div>
+              <a class="md-close">
+                <img class="md-closeImg" src="./img/close.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="md-overlay"></div>
+          <img src="./img/Productshoes.jpg" alt="" class="shoes-product">
+          <img src="./img/Productshoes.jpg" alt="" class="shoes-product">
+          <img src="./img/Productshoes.jpg" alt="" class="shoes-product">
+          <img src="./img/Productshoes.jpg" alt="" class="shoes-product">
+          <img src="./img/Productshoes.jpg" alt="" class="shoes-product">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section2">
+      <div class="">
+      </div>
+    </section>
+
+    <section class="section" id="section3">
+      <div class="">
+      </div>
+    </section>
+
+    <section class="section" id="section4">
+      <div class="">
+      </div>
+    </section>
+
+    <section class="section" id="section5">
+      <div class="">
+      </div>
+    </section>
+
+    <section class="section" id="section6">
+      <div class="">
+      </div>
+    </section>
+
+  </div>
   <!-- end content -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="page_piling/jquery.pagepiling.min.js"></script>
+  <script src="index.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#pagepiling').pagepiling({
+        sectionsColor: ['#ffffff', '#ffffff', '#ffffff'],
+        navigation: {
+          'position': 'right',
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
