@@ -1,0 +1,72 @@
+.footer {
+  &-partnersContainer {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  &-partnersImg {
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem;
+    @include for-size(desktop-up) {
+    }
+  }
+  &-pageContainer {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  &-pageLink {
+    font-family: 'Assistant', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+  &-googleImg {
+    position: relative;
+    width: 100%;
+  }
+  &-googleContainer {
+  }
+  &-googleTitle {
+    position: absolute;
+  }
+  &-googleText {
+    position: absolute;
+  }
+  &-googleImg {
+    width: 100vw;
+    height: 10rem;
+    background: #2B2B2B;
+    opacity: 0.6;
+  }
+  &-socialnetworkContainer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &-socialnetworkImg {
+    width: 6rem;
+    height: 6rem;
+    margin-top: 5rem;
+  }
+  &-newsletterText {
+    font-family: 'Assistant', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 2rem;
+  }
+  &-newsletterContainer {
+    text-align: center;
+    margin-top: 5rem;
+  }
+  &-newsletterInput::placeholder {
+    color: $red-run;
+  }
+  &-newsletterInput {
+    border: 1px solid #ffffff;
+    width: 20rem;
+    height: 4rem;
+    margin-top: 2rem;
+  }
+}
