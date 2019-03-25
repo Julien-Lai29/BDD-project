@@ -4,15 +4,30 @@
     font-weight: bold;
     font-size: 4rem;
     color: $red-run;
-    text-align: center;
     margin-bottom: 2rem;
+    margin-left: 2rem;
+    text-align: left;
     @include for-size(desktop-up) {
+      display: none;
+    }
+  }
+
+  &-titleDesktop {
+    display: none;
+    @include for-size(desktop-up) {
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-weight: bold;
+      color: $red-run;
+      display: block;
       font-size: 5rem;
       margin-bottom: 2rem;
+      text-align: center;
     }
   }
 
   &-productContainer {
+    width: 35rem;
+    height: auto;
     margin: auto;
     text-align: center;
     @include for-size(desktop-up) {
@@ -24,8 +39,12 @@
   &-product {
     width: 13rem;
     height: 13rem;
-    border: 1px solid black;
-    margin: 1rem;
+    background: #fff;
+    box-shadow: $dp8-1;
+    box-shadow: $dp8-2;
+    box-shadow: $dp8-3;
+    border-radius: 2rem;
+    margin: 2rem;
     @include for-size(desktop-up) {
       width: 25rem;
       height: 25rem;

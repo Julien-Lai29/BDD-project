@@ -52,21 +52,37 @@
     </section>
 
     <section class="section" id="section2">
-      <div class="secondEvent">
-        <div class="secondEvent-containerLeft">
-          <h3 class="secondEvent-title">RENCONTRES SPORTIVES</h3>
-          <img src="./img/pictThree.jpg" alt="" class="secondEvent-slider">
+      <div class="firstEvent">
+        <div class="firstEvent-titleContainer">
+          <h2 class="firstEvent-title">MARATHON DE PARIS</h2>
         </div>
-        <div class="secondEvent-containerRight">
-          <img src="./img/pictOne.jpg" alt="" class="secondEvent-img1">
-          <img src="./img/pictTwo.jpg" alt="" class="secondEvent-img">
-        </div>
-        <div class="secondEvent-mobileContainer">
-          <img class="secondEvent-mobileImg" src="./img/pictOne.jpg" alt="">
-          <img class="secondEvent-mobileImg" src="./img/pictTwo.jpg" alt="">
-          <img class="secondEvent-mobileImg" src="./img/pictThree.jpg" alt="">
+        <div class="firstEvent-arrow">
+          <a class="md-trigger" data-modal="modal-12">
+            <img class="firstEvent-arrowImg" src="./img/redArrowCircle1.png" alt="">
+          </a>
         </div>
       </div>
+      <div class="md-modal md-effect-12">
+        <div class="md-content">
+          <img class="md-img" src="./img/pictOne.jpg" alt="">
+          <div class="md-titleContainerMobile">
+            <h3 class="md-titleMobile">MARATHON DE PARIS</h3>
+          </div>
+          <div class="md-textContainer">
+            <h3 class="md-title">MARATHON DE PARIS</h3>
+            <p class="md-text">Rencontres sportives des rencontres pour petits et grands qui raviront les amateurs comme les professionnels. Crées pour partager et faire découvrire le monde du sport au non initiés, ces rencontre servent aussi au
+              habitués à s’ouvrire à de nouvelles pratique, rencontrer des camarades et participer aux nombreux concours organisé durant la manifestation.</p>
+            <p class="md-textI">Pour : Pro et amateur.</p>
+            <p class="md-textI">Date : 25 février 2019.</p>
+            <p class="md-textI">Prix : Prix libre/ gratuit.</p>
+          </div>
+          <a class="md-close">
+            <img class="md-closeImg" src="./img/close.png" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="md-overlay"></div>
     </section>
 
     <section class="section" id="section3">
@@ -117,6 +133,10 @@
     background-size: cover;
   }
 
+  #section2{
+    background-size: cover;
+  }
+
   #section3{
     background-size: cover;
   }
@@ -130,8 +150,15 @@
     background-size: cover;
   }
 
+  #section2{
+    background-image: url(./img/pictFour.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   #section3{
-    background-image: url(./img/pictTwo.jpg);
+    background-image: url(./img/pictThree.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

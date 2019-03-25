@@ -1,5 +1,6 @@
 .team {
   text-align: center;
+
   &-img {
     margin-top: 2rem;
     width: 40rem;
@@ -11,6 +12,28 @@
     }
   }
 
+  &-vendorContainer {
+    display: inline-block;
+  }
+
+  &-vendorTitle {
+    font-size: 4rem;
+    color: $black-run;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+
+  &-vendorImg {
+    width: 35rem;
+    height: 35rem;
+    background: #fff;
+    box-shadow: $dp8-1;
+    box-shadow: $dp8-2;
+    box-shadow: $dp8-3;
+    border-radius: 2rem;
+  }
+
   &-titleDesktop {
     display: none;
     @include for-size(desktop-up) {
@@ -20,7 +43,7 @@
       font-size: 5rem;
       color: $black-run;
       display: block;
-      margin-bottom: 3rem;
+      margin-bottom: 5rem;
     }
   }
 
@@ -37,10 +60,9 @@
     box-shadow: $dp8-3;
     border-radius: 2rem;
     margin: 0 auto;
-    @include for-size(desktop-up) {
-      display: none;
-    }
+    @include for-size(desktop-up) {}
   }
+
   &-titleMobile {
     margin: auto;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -49,7 +71,9 @@
     color: $black-run;
     text-align: center;
     @include for-size(desktop-up) {
-      display: none;
+      font-size: 6rem;
+      color: $red-run;
+      margin-bottom: 3rem;
     }
   }
 
@@ -59,19 +83,19 @@
     margin: 0 auto;
     @include for-size(desktop-up) {
       display: inline-block;
-      margin-left: 6rem;
       vertical-align: top;
+      margin: 3rem;
     }
   }
 
   &-text {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    color:$black-run;
-    text-align: left;
+    font-family: 'Assistant', sans-serif;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: $black-run;
+    text-align: justify;
     margin-top: 3rem;
-    @include for-size(desktop-up) {
-    }
+    @include for-size(desktop-up) {}
   }
 
   &-arrow {
